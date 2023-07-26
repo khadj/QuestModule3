@@ -1,20 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Text Adventure Game</title>
+  <title>Ты принял вызов</title>
 </head>
 <body>
-<h1>Вопрос 1</h1>
-<p>Вы стоите перед развилкой. Выберите свой путь:</p>
-<form action="game" method="get">
-    <input type="hidden" name="action" value="question1">
-    <input type="radio" name="answer" value="1"> Пойти налево<br>
-    <input type="radio" name="answer" value="2"> Пойти направо<br>
-    <br>
-    <input type="submit" value="Отправить">
+<h1>Поднимаешься на мостик к капитану?</h1>
+<form action="question1" method="post">
+  <input type="radio" name="identity" value="truth"> Да<br>
+  <input type="radio" name="identity" value="lie"> Нет<br>
+  <input type="submit" value="Отправить">
 </form>
 </body>
 </html>
